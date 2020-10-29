@@ -1,6 +1,10 @@
 ---
 permalink: /projects/
+title: "Projects"
 ---
+
+Research Projects
+======
 
 ## Active Learning for Machine Learning Potentials - `al_mlp`
 
@@ -28,3 +32,14 @@ Codebase: [github.com/ruiqic/ulissi-waltime-prediction](https://github.com/ruiqi
 Class Projects
 ======
 
+## Laboratory: Storage Methods on Vitamin C Degradation
+
+In a team of four, we explored the effect of different storage methods on the vitamin C concentration of orange and lemon juice. The analysis included organic extraction, iodimetric titration, dichlorophenolindophenol (DCPIP) titration, and high-performance liquid chromatography (HPLC). We concluded that vitamin C degrades significantly through refrigeration, while freezing and storing the whole fruit preserves the vitamin well. 
+
+
+
+## Programming: Sokoban
+
+I programmed the classic puzzile game Sokoban in Python. Instead of hardcoded levels, I used backtracking to randomly generate the puzzles at varying difficulty levels. The game also used sockets and threading to allow for a multiplayer gamemode, where players compete to solve puzzles in the shortest duration.
+
+Codebase: [github.com/ruiqic/term-project/](https://github.com/ruiqic/term-project/)
