@@ -1,7 +1,11 @@
 ---
 permalink: /projects/
-title: "Research Projects"
+title: "Projects"
 ---
+
+Research Projects
+======
+
 
 ## Active Learning for Machine Learning Potentials - `al_mlp`
 
