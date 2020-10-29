@@ -1,11 +1,6 @@
 ---
 permalink: /projects/
-title: "Projects"
 ---
-
-Research Projects
-======
-
 
 ## Active Learning for Machine Learning Potentials - `al_mlp`
 
@@ -28,3 +23,8 @@ Codebase: [github.com/ulissigroup/amptorch](https://github.com/ulissigroup/ampto
 This is my first major project within the [Ulissi Group](https://ulissigroup.cheme.cmu.edu/), I developed a machine learning model that trains on a large dataset of past Density Functional Theory calculations to predict the duration of future calculations. The model allows the prioritization of fast and feasible calculations over long calculations that time out or produce unphysical results to increase calculation throughput.
 
 Codebase: [github.com/ruiqic/ulissi-waltime-prediction](https://github.com/ruiqic/ulissi-waltime-prediction)
+
+
+Class Projects
+======
+
