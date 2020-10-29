@@ -48,7 +48,7 @@ Skills
 * Laboratory: titrations, UV/Vis spectrometry, highperformance liquid chromatography (HPLC), atomicabsorption spectroscopy
 * Languages: English, Mandarin, Hungarian, Spanish (intermediate)
   
-Projects[https://ruiqic.github.io/projects/]
+[Projects](https://ruiqic.github.io/projects/)
 ======
 
 Scholarships
