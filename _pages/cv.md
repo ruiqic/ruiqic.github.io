@@ -29,7 +29,7 @@ Experience
 * Summer 2018: Internship at BorsodChem, Hungary
   * Oversaw the pipe replacement process in the toluene diisocyanate and methylenediphenyl diisocyanateproduction plants.
   * Translated between Chinese and Hungarian to facilitate communication between colleagues to ensure dailyprocedures were eﬀiciently conducted.
-  * Supervised the Chinese welders and pipefitters in the Hungarian work environment to comply with local workhabits and safety standards.
+  * Supervised the Chinese welders and pipefitters in the Hungarian work environment to comply with local work habits and safety standards.
   
 
 [Publications](https://ruiqic.github.io/publications/)
