@@ -59,12 +59,7 @@ Scholarships
 
 Academic Awards
 ======
-* Carnegie Institute of Technology, Dean’s List, Spring 2020
-* Carnegie Institute of Technology, Dean’s List, Fall 2019
-* Carnegie Institute of Technology, Dean’s List, Spring 2019
-* Carnegie Institute of Technology, Dean’s List, Fall 2018
-* Carnegie Institute of Technology, Dean’s List, Spring 2018
-* Mellon College of Science, Dean’s List - High Honors, Fall 2017
+* Dean’s List, Fall 2017 - Spring 2020
 
 Extracurricular 
 ======
