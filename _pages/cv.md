@@ -43,8 +43,8 @@ Poster Presentations
   
 Skills
 ======
-* Software: MATLAB, Aspen Plus
-* Programming: Python, C, SML, assembly language
+* Software: MATLAB, Aspen Plus, GAMS
+* Programming: Python, C, Standard ML, assembly language, Lua, Prolog
 * Laboratory: titrations, UV/Vis spectrometry, highperformance liquid chromatography (HPLC), atomic absorption spectroscopy
 * Languages: English, Mandarin, Hungarian, Spanish (intermediate)
   
@@ -59,7 +59,7 @@ Scholarships
 
 Academic Awards
 ======
-* Dean’s List, Fall 2017 - Spring 2020
+* Dean’s List, Fall 2017 - Fall 2020
 
 Extracurricular 
 ======
