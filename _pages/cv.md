@@ -30,7 +30,7 @@ Experience
   * Took part in the development of a flexible machine learning potential to learn from atomic simulations.
   * Developed an active learning framework that learns the correction between first principle theory and simple physics-based potentials to serve as an inexpensive DFT surrogate.
 
-* Summer 2018: Internship at BorsodChem, Hungary
+* Summer 2018, Internship at BorsodChem, Hungary
   * Oversaw the pipe replacement process in the toluene diisocyanate and methylenediphenyl diisocyanate production plants.
   * Translated between Chinese and Hungarian to facilitate communication between colleagues to ensure daily procedures were efficiently conducted.
   * Supervised the Chinese welders and pipefitters in the Hungarian work environment to comply with local work habits and safety standards.
@@ -44,7 +44,7 @@ Poster Presentations
   
 Skills
 ======
-* Software: MATLAB, Aspen Plus, GAMS, Linux, MongoDB
+* Software: MATLAB, Aspen Plus, GAMS, Linux, Conda, MongoDB
 * Programming: Python (NumPy, PyTorch, pandas, SciPy, seaborn, ASE), Standard ML, C, assembly language, Lua, Prolog
 * Laboratory: titrations, UV/Vis spectrometry, highperformance liquid chromatography (HPLC), atomic absorption spectroscopy
 * Languages: English, Mandarin, Hungarian, Spanish (intermediate)
