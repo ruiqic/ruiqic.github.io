@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[PDF version](https://ruiqic.github.io/files/cv.pdf)
+[PDF version](https://ruiqic.github.io/files/Simple_CV.pdf)
 
 Education
 ======
