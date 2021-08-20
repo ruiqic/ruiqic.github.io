@@ -6,7 +6,7 @@ title: "Projects"
 Research Projects
 ======
 
-## Active Learning for Machine Learning Potentials - `al_mlp`
+## Uncertainty Quantificaation of Interatomic Potentials
 
 I explored different uncertainty quantification methods for machine learning interatomic potentials such as [Gaussian Approximation Potential (GAP)](https://arxiv.org/pdf/1502.01366) and [Moment Tensor Potential (MTP)](https://arxiv.org/pdf/1512.06054) for application in active learning. The methods included Bayesian and ensemble (bootstrapping and subsampling). Furthermore, I evaluated several uncertainty recalibration methods including [isotonic regression](https://arxiv.org/abs/1807.00263) and [linear regression](https://arxiv.org/abs/2105.13303) to improve uncertainty estimation.
 
