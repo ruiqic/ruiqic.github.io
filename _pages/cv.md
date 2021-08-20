@@ -19,7 +19,11 @@ Education
 
 Experience
 ======
-* Summer 2019–Current, Research at Ulissi Group, CMU
+* Summer 2021, Research at Karsten Reuter Group, Fritz Haber Institute
+  * Compared Bayesian and ensemble methods of uncertainty quantification for machine-learned interatomic potentials to improve active learning framework.
+  * Explored uncertainty recalibration methods to improve the quality of uncertainty measures.
+
+* Summer 2019 – Spring 2021, Research at Zachary Ulissi Group, Carnegie Mellon University
   * Calculated adsorption energies of different adsorbates and surfaces with density functional theory (DFT) to find desirable catalysts for electrochemical processes.
   * Organized and analyzed past DFT data to assess efficiency of current high-throughput automated workflow.
   * Trained machine learning models to prioritize high-success calculations and skip futile calculations.
@@ -31,9 +35,6 @@ Experience
   * Translated between Chinese and Hungarian to facilitate communication between colleagues to ensure daily procedures were efficiently conducted.
   * Supervised the Chinese welders and pipefitters in the Hungarian work environment to comply with local work habits and safety standards.
   
-
-[Publications](https://ruiqic.github.io/publications/)
-======
   
 Poster Presentations
 ======
@@ -43,13 +44,11 @@ Poster Presentations
   
 Skills
 ======
-* Software: MATLAB, Aspen Plus, GAMS
-* Programming: Python, C, Standard ML, assembly language, Lua, Prolog
+* Software: MATLAB, Aspen Plus, GAMS, Linux, MongoDB
+* Programming: Python (NumPy, PyTorch, pandas, SciPy, seaborn, ASE), Standard ML, C, assembly language, Lua, Prolog
 * Laboratory: titrations, UV/Vis spectrometry, highperformance liquid chromatography (HPLC), atomic absorption spectroscopy
 * Languages: English, Mandarin, Hungarian, Spanish (intermediate)
   
-[Projects](https://ruiqic.github.io/projects/)
-======
 
 Scholarships
 ======
@@ -59,10 +58,10 @@ Scholarships
 
 Academic Awards
 ======
-* Dean’s List, Fall 2017 - Fall 2020
+* Dean’s List, Fall 2017 - Spring 2021
 
 Extracurricular 
 ======
-* Kiltie Band, 2020-Current
-* Tartan Wind Ensemble, 2018-2019
+* Kiltie Band, 2020
+* Tartan Wind Ensemble, 2018 - 2019
 
