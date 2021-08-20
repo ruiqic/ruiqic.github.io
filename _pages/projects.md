@@ -8,6 +8,13 @@ Research Projects
 
 ## Active Learning for Machine Learning Potentials - `al_mlp`
 
+I explored different uncertainty quantification methods for machine learning interatomic potentials such as [Gaussian Approximation Potential (GAP)](https://arxiv.org/pdf/1502.01366) and [Moment Tensor Potential (MTP)](https://arxiv.org/pdf/1512.06054) for application in active learning. The methods included Bayesian and ensemble (bootstrapping and subsampling). Furthermore, I evaluated several uncertainty recalibration methods including [isotonic regression](https://arxiv.org/abs/1807.00263) and [linear regression](https://arxiv.org/abs/2105.13303) to improve uncertainty estimation.
+
+Partial Codebase: [github.com/ruiqic/FHI_uncertainty_scripts](https://github.com/ruiqic/FHI_uncertainty_scripts)
+
+
+## Active Learning for Machine Learning Potentials - `al_mlp`
+
 I am a lead developer of [`al_mlp`](https://github.com/ulissigroup/al_mlp/), an active learning package for conducting $\Delta$-machine learning to learn the correction between a simple physics-based potential and an expensive ab-initio level theory. The package is built on top of [Atomic Simulation Environment](https://github.com/rosswhitfield/ase) to interface with atomistic simulations.
 
 Codebase: [github.com/ulissigroup/al_mlp/](https://github.com/ulissigroup/al_mlp/)
