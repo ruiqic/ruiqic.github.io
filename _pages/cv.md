@@ -39,7 +39,6 @@ Experience
 Poster Presentations
 ======
 * “Accelerating Quantum Mechanical Simulations Using Physics-Based Machine Learning Potentials” at 2020 virtual AIChE Annual Meeting
-* “Enhancement of Workflow Efficiency for High Throughput Density Functional Theory Calculations” at 2019 Berg Undergraduate Research Poster Symposium
 * “Enhancing the Workflow Efficiency of High Throughput Surface Calculations” at 2019 Pittsburgh-Cleveland Catalysis Society Annual Symposium
   
 Skills
@@ -54,7 +53,7 @@ Scholarships
 ======
 * Chemical Engineering Summer Scholars, 2020
 * Summer Undergraduate Research Fellowship, 2019
-* Chemical Engineering Summer Scholars, 2020
+* Chemical Engineering Summer Scholars, 2019
 
 Academic Awards
 ======
