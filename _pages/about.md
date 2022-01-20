@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am currently a first-year PhD student in the [School of Chemical & Biomolecular Engineering](https://chbe.gatech.edu/) at [Georgia Tech](https://www.gatech.edu/).
+I am currently a first-year PhD student in Machine Learning in the [ H. Milton Stewart School of Industrial and Systems Engineering](https://www.isye.gatech.edu/) at [Georgia Tech](https://www.gatech.edu/).
 
 I graduated from [Carnegie Mellon University](https://www.cmu.edu/) with a Bachelor of Science in Chemical Engineering and a minor in Computer Science. In the summer of 2019, I joined the research group advised by [Zachary Ulissi](https://ulissigroup.cheme.cmu.edu/bio/). My research focused on applying machine learning to speed up high throughput catalyst screening. 
 
