@@ -9,10 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
-[PDF version](https://ruiqic.github.io/files/Simple_CV.pdf)
+[PDF version](https://ruiqic.github.io/files/ruiqic_cv_no_address.pdf)
 
 Education
 ======
+* Ph.D. Student in Machine Learning, Georgia Institute of Technology, 2021 - Present
+
 * B.S. in Chemical Engineering, Carnegie Mellon University, 2021
   * Minor in Computer Science
 
@@ -43,8 +45,8 @@ Poster Presentations
   
 Skills
 ======
-* Software: MATLAB, Aspen Plus, GAMS, Linux, Conda, MongoDB
-* Programming: Python (NumPy, PyTorch, pandas, SciPy, seaborn, ASE), Standard ML, C, assembly language, Lua, Prolog
+* Software: MATLAB, Aspen Plus, GAMS, Linux, Conda, MongoDB, Google Search
+* Programming: Python (NumPy, PyTorch, pandas, SciPy, seaborn, OpenCV), Standard ML, C, assembly language, Lua, Prolog
 * Laboratory: titrations, UV/Vis spectrometry, highperformance liquid chromatography (HPLC), atomic absorption spectroscopy
 * Languages: English, Mandarin, Hungarian, Spanish (intermediate)
   
