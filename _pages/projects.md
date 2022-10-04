@@ -15,7 +15,7 @@ Partial Codebase: [github.com/ruiqic/FHI_uncertainty_scripts](https://github.com
 
 ## Active Learning for Machine Learning Potentials - `al_mlp`
 
-I was a lead developer of [`al_mlp`](https://github.com/ulissigroup/al_mlp/), an active learning package for conducting $\Delta$-machine learning to learn the correction between a simple physics-based potential and an expensive ab-initio level theory. The package is built on top of [Atomic Simulation Environment](https://github.com/rosswhitfield/ase) to interface with atomistic simulations.
+I was a lead developer of [`al_mlp`](https://github.com/ulissigroup/al_mlp/) (now rebranded as finetuna), an active learning package for conducting $\Delta$-machine learning to learn the correction between a simple physics-based potential and an expensive ab-initio level theory. The package is built on top of [Atomic Simulation Environment](https://github.com/rosswhitfield/ase) to interface with atomistic simulations.
 
 Codebase: [github.com/ulissigroup/al_mlp/](https://github.com/ulissigroup/al_mlp/)
 
