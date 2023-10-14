@@ -50,3 +50,11 @@ In a team of four, we explored the effect of different storage methods on the vi
 I programmed the classic puzzile game [Sokoban](https://en.wikipedia.org/wiki/Sokoban) in Python. Instead of hardcoded levels, I used backtracking to randomly generate the puzzles at varying difficulty levels. The game also used sockets and threading to allow for a multiplayer gamemode, where players compete to solve puzzles in the shortest duration.
 
 Codebase: [github.com/ruiqic/term-project/](https://github.com/ruiqic/term-project/)
+
+
+Personal Projects
+======
+
+## Cryptocurrency Trading Bot
+
+I created a trading bot that operates on the [Solana](https://solana.com/) blockchain, leveraging Python SDKs for its implementation. Taking advantage of negligible transactions fees on Solana, the bot profits from market volatility and trading fee rebates. The bot is hosted on the [Google Cloud Platform](https://cloud.google.com/) to have constant uptime. Since deployment, the bot has been profitable (as of October, 2023).
