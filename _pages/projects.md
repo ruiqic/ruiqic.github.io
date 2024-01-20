@@ -55,6 +55,6 @@ Codebase: [github.com/ruiqic/term-project/](https://github.com/ruiqic/term-proje
 Personal Projects
 ======
 
-## Cryptocurrency Trading Bot
+## On-chain Trading Bot
 
-I created a trading bot that operates on the [Solana](https://solana.com/) blockchain, leveraging Python SDKs for its implementation. Taking advantage of negligible transactions fees on Solana, the strategy capitalizes on normal price volatility in digital assets and trading fee rebates from the underlying DeFi protocol. The bot is hosted on the [Google Cloud Platform](https://cloud.google.com/) to have constant uptime. Since deployment, the bot has been profitable (as of October, 2023).
+I created a bot that operates on the [Solana](https://solana.com/) blockchain, using Python and JavaScript to interact with Rust programs. The strategy profits from price volatility in digital assets by market making and matching orders on a decentralized exchange. The bot is hosted on the [Google Cloud Platform](https://cloud.google.com/) to have constant uptime. 
