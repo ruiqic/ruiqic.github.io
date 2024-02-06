@@ -8,15 +8,13 @@ jobs:
   fetch-data:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Google Cloud SDK
-      uses: google-github-actions/setup-gcloud@v2
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v2'
       with:
-        project_id: ${{ secrets.project_id }}
-        service_account_key: ${{ secrets.access_key }}
-        export_default_credentials: true
+        credentials_json: '${{ secrets.access_key }}'
+
+    - name: 'Set up Cloud SDK'
+      uses: 'google-github-actions/setup-gcloud@v2'
 
     - name: Fetch data from Google Cloud Storage
       run: gsutil cp gs://free-tier-driftbot/SOL_history.csv ./files/SOL_history.csv
