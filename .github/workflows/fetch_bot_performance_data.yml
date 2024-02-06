@@ -1,0 +1,22 @@
+name: Fetch crypto bot logs every week
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # This will run the workflow every Monday at midnight
+  workflow_dispatch:  # This allows you to manually trigger the workflow
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@master
+      with:
+        project_id: ${{ secrets.project_id }}
+        service_account_key: ${{ secrets.access_key }}
+        export_default_credentials: true
+
+    - name: Fetch data from Google Cloud Storage
+      run: gsutil cp gs://free-tier-driftbot/SOL_history.csv ./files/SOL_history.csv
