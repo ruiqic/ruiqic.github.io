@@ -64,6 +64,8 @@ The chart undergoes automatic weekly updates through GitHub Actions. Sudden drop
             let y2padding = (y2extent[1] - y2extent[0]) * 0.2;
             y2.domain([y2extent[0] - y2padding, y2extent[1] + y2padding]);
 
+            console.log(decimatedData)
+
             var tip = d3.tip()
                 .attr('class', 'd3-tip')
                 .offset([60, 0])
