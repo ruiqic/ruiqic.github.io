@@ -14,12 +14,10 @@ jobs:
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
       with:
-        credentials_json: '${{ secrets.GOOGLE_CLOUD_STORAGE }}'
+        credentials_json: '${{ secrets.GOOGLE_VM }}'
 
     - name: 'Set up Cloud SDK'
       uses: 'google-github-actions/setup-gcloud@v2'
 
-    - name: 'Use gcloud CLI'
-      run: 'gcloud info'
-    #- name: Fetch data from Google Cloud Storage
-    #  run: gsutil cp gs://free-tier-driftbot/SOL_history.csv ./files/SOL_history.csv
+    - name: Fetch data from Google Cloud Storage
+      run: gsutil cp gs://free-tier-driftbot/SOL_history.csv ./files/SOL_history.csv
