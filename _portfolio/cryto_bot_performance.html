@@ -3,27 +3,39 @@ title: "Crypto Bot Performance"
 permalink: /crypto-bot-performance/
 ---
 
+The chart undergoes automatic weekly updates through GitHub Actions. Sudden drops in value indicate periodic gas refills to pay for transaction fees. 
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Line Chart</title>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="/lib/d3.v5.min.js"></script>
+    <script type="text/javascript" src="/lib/d3-tip.min.js"></script>
+
 </head>
 <body>
     <div id="chart"></div>
     <script>
-        var margin = {top: 20, right: 20, bottom: 30, left: 50},
+        var margin = {top: 20, right: 60, bottom: 30, left: 70},
             width = 960 - margin.left - margin.right,
             height = 500 - margin.top - margin.bottom;
 
-        var parseTime = d3.utcParse("%s");
+        //var parseTime = d3.timeParse("%s");
+        var formatTime = d3.timeFormat("%Y/%m/%d %H:%M:%S"); // Format date
+        var formatTimeAxis = d3.timeFormat("%Y/%m/%d"); // Format date
 
         var x = d3.scaleTime().range([0, width]);
         var y = d3.scaleLinear().range([height, 0]);
+        var y2 = d3.scaleLinear().range([height, 0]); // Second y-axis scale
 
         var line = d3.line()
-            .x(function(d) { return x(d.time); })
-            .y(function(d) { return y(d.maker_value); });
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d.total_value); });
+
+        var price_line = d3.line()
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y2(d.price); });
 
         var svg = d3.select("#chart").append("svg")
             .attr("width", width + margin.left + margin.right)
@@ -32,25 +44,126 @@ permalink: /crypto-bot-performance/
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         d3.csv("/files/SOL_history.csv").then(function(data) {
-            data.forEach(function(d) {
-                d.time = new Date(+d.time);
-                d.maker_value = +d.maker_value;
+
+            // Filter data to keep up to 1000 evenly sampled data points
+            var targetDataPoints = 1000;
+            var step = Math.max(1, Math.ceil(data.length / targetDataPoints));
+            var decimatedData = data.filter(function(d, i) {
+                return i % step === 0;
             });
 
-            x.domain(d3.extent(data, function(d) { return d.time; }));
-            y.domain(d3.extent(data, function(d) { return d.maker_value; }));
+            decimatedData.forEach(function(d) {
+                d.date = new Date(+d.time * 1000);
+                d.total_value = +d.maker_value + +d.filler_value;
+                d.price = +d.price;
+            });
+
+            x.domain(d3.extent(decimatedData, function(d) { return d.date; }));
+            y.domain([0, d3.max(decimatedData.map(function(d) {return d.total_value;})) * 1.2]);
+            let y2extent = d3.extent(decimatedData, function(d) { return d.price; });
+            let y2padding = (y2extent[1] - y2extent[0]) * 0.2;
+            y2.domain([y2extent[0] - y2padding, y2extent[1] + y2padding]);
+
+            var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([60, 0])
+                .html(function(d) {
+                    return formatTime(d.date) + "<br>" +
+                        "Asset Price in USDC: " + d.price.toFixed(4) + "<br>" +
+                        "Value in USDC: " + d.total_value.toFixed(2); 
+                });
+            svg.call(tip);
 
             svg.append("path")
-                .data([data])
+                .data([decimatedData])
                 .attr("class", "line")
+                .attr("fill", "none")
+                .attr("stroke", "lightcoral")
+                .attr("stroke-width", 1.5)
+                .attr("d", price_line);
+
+            svg.append("path")
+                .data([decimatedData])
+                .attr("class", "line")
+                .attr("fill", "none")
+                .attr("stroke", "steelblue")
+                .attr("stroke-width", 2.5)
                 .attr("d", line);
+
+            // Append a vertical line for the tooltip
+            var verticalLine = svg.append("line")
+                .attr("class", "vertical-line")
+                .attr("y1", 0)
+                .attr("y2", height)
+                .attr("stroke", "gray")
+                .attr("stroke-width", 1)
+                .style("opacity", 0);
+
+            // Add a transparent overlay to capture mouse events
+            svg.append("rect")
+                .attr("width", width)
+                .attr("height", height)
+                .style("fill", "none")
+                .style("pointer-events", "all")
+                .on('mouseover', function() {
+                    tip.style("opacity", 1);
+                    verticalLine.style("opacity", 1);
+                })
+                .on('mousemove', function() {
+                    var mouseX = d3.mouse(this)[0];
+                    var xValue = x.invert(mouseX);
+                    var bisectDate = d3.bisector(function(d) { return d.date; }).left;
+                    var idx = bisectDate(decimatedData, xValue);
+                    tip.show(decimatedData[idx]);
+                    // Update the position of the vertical line
+                    verticalLine.attr("x1", mouseX)
+                        .attr("x2", mouseX)
+                        .style("opacity", 1);
+                })
+                .on('mouseout', function() {
+                    tip.style("opacity", 0);
+                    verticalLine.style("opacity", 0);
+                });
+
+            var xAxis = d3.axisBottom(x)
+                .ticks(5)
+                .tickFormat(formatTimeAxis);
 
             svg.append("g")
                 .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x));
+                .call(xAxis)
+                .selectAll("text")
+                .style("font-size", "14px");
 
             svg.append("g")
-                .call(d3.axisLeft(y));
+                .call(d3.axisLeft(y))
+                .selectAll("text")
+                .style("font-size", "14px");
+
+            svg.append("g")
+                .attr("transform", "translate(" + width + ", 0)") // Move the new y-axis to the right
+                .call(d3.axisRight(y2))
+                .selectAll("text")
+                .style("font-size", "14px");
+
+            // Add y-axis label
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 0 - margin.left)
+                .attr("x",0 - (height / 2))
+                .attr("dy", "1em")
+                .style("text-anchor", "middle")
+                .style("fill", "steelblue")
+                .text("Portfolio Value"); 
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", width + margin.right-20)
+                .attr("x", 0 - (height / 2))
+                .attr("dy", "1em")
+                .style("text-anchor", "middle")
+                .style("fill", "lightcoral")
+                .text("Asset Price"); // Adjust text as needed
         });
     </script>
 </body>

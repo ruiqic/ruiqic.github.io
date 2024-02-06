@@ -36,6 +36,18 @@ This was my first major project within the [Ulissi Group](https://ulissigroup.ch
 Codebase: [github.com/ruiqic/ulissi-waltime-prediction](https://github.com/ruiqic/ulissi-waltime-prediction)
 
 
+
+
+Personal Projects
+======
+
+## On-chain Trading Bot
+
+I programmed a bot that operates on the [Solana](https://solana.com/) blockchain, using Python and JavaScript to interact with Rust programs. The strategy profits from price volatility in digital assets by market making and matching orders on a decentralized exchange. The bot is hosted on [Google Cloud Platform](https://cloud.google.com/). I also made a [simple chart](../crypto-bot-performance) to track the bot's performance.
+
+
+
+
 Class Projects
 ======
 
@@ -44,17 +56,8 @@ Class Projects
 In a team of four, we explored the effect of different storage methods on the vitamin C concentration of orange and lemon juice. The analysis included organic extraction, iodimetric titration, dichlorophenolindophenol (DCPIP) titration, and high-performance liquid chromatography (HPLC). We concluded that vitamin C degrades significantly through refrigeration, while freezing and storing the whole fruit preserves the vitamin well. 
 
 
-
 ## Programming: Sokoban
 
 I programmed the classic puzzile game [Sokoban](https://en.wikipedia.org/wiki/Sokoban) in Python. Instead of hardcoded levels, I used backtracking to randomly generate the puzzles at varying difficulty levels. The game also used sockets and threading to allow for a multiplayer gamemode, where players compete to solve puzzles in the shortest duration.
 
 Codebase: [github.com/ruiqic/term-project/](https://github.com/ruiqic/term-project/)
-
-
-Personal Projects
-======
-
-## On-chain Trading Bot
-
-I created a bot that operates on the [Solana](https://solana.com/) blockchain, using Python and JavaScript to interact with Rust programs. The strategy profits from price volatility in digital assets by market making and matching orders on a decentralized exchange. The bot is hosted on the [Google Cloud Platform](https://cloud.google.com/) to have constant uptime. 
