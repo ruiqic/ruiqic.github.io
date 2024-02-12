@@ -1,8 +1,7 @@
 name: Fetch crypto bot logs every week
 on:
   schedule:
-    - cron: '0 0 * * 1'  # This will run the workflow every Monday at midnight
-  workflow_dispatch:  # This allows you to manually trigger the workflow
+    - cron: '30 0 * * 1'
 
 jobs:
   fetch-data:
