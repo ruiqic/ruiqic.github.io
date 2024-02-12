@@ -1,7 +1,7 @@
 name: Fetch crypto bot logs every week
 on:
   schedule:
-    - cron: '59 0 * * 1'
+    - cron: '10 1 * * 1'
 
 jobs:
   fetch-data:
