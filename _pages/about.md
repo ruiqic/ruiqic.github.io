@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am currently a PhD student in Machine Learning in the [ H. Milton Stewart School of Industrial and Systems Engineering](https://www.isye.gatech.edu/) at [Georgia Tech](https://www.gatech.edu/), working with [Prof. Jing Li](https://sites.gatech.edu/jing-li/). My projects include to automating cell therapy manufacturing processes and segmenting medical images for clinics.
+I am currently a PhD student in Machine Learning at the [ H. Milton Stewart School of Industrial and Systems Engineering](https://www.isye.gatech.edu/), [Georgia Tech](https://www.gatech.edu/), under the guidance of [Prof. Jing Li](https://sites.gatech.edu/jing-li/). My projects include automating cell therapy manufacturing processes and segmenting medical images for clinical applications.
 
 I graduated from [Carnegie Mellon University](https://www.cmu.edu/) with a Bachelor of Science in Chemical Engineering and a minor in Computer Science. In the summer of 2019, I joined the research group advised by [Prof. Zachary Ulissi](https://zulissi.github.io/). My research focused on applying machine learning to accelerate high throughput catalyst screening. 
 
