@@ -71,8 +71,8 @@ The chart undergoes automatic weekly updates through GitHub Actions. Prior to 20
                 .offset([60, 0])
                 .html(function(d) {
                     return formatTime(d.date) + "<br>" +
-                        "<span style='color: steelblue;'>Asset Price in USDC: " + d.price.toFixed(4) + "</span><br>" +
-                        "<span style='color: lightcoral;'>Value in USDC: " + d.total_value.toFixed(2) + "</span>"; 
+                        "<span style='color: lightcoral;'>Asset Price in USDC: " + d.price.toFixed(4) + "</span><br>" +
+                        "<span style='color: steelblue;'>Value in USDC: " + d.total_value.toFixed(2) + "</span>"; 
                 });
             svg.call(tip);
 
@@ -133,6 +133,7 @@ The chart undergoes automatic weekly updates through GitHub Actions. Prior to 20
                 .call(xAxis)
                 .selectAll("text")
                 .style("text-anchor", "start") 
+                .attr("dy", ".1em")
                 .attr("transform", "rotate(20)")
                 .style("font-size", "14px");
 
