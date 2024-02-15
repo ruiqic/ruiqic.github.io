@@ -3,7 +3,7 @@ title: "Crypto Bot Performance"
 permalink: /crypto-bot-performance/
 ---
 
-The chart undergoes automatic weekly updates through GitHub Actions. Sudden drops in value indicate periodic gas refills to pay for transaction fees. 
+The chart undergoes automatic weekly updates through GitHub Actions. Prior to 2024/02/15, the total value did not account for funds set aside to pay for transaction fees, hence sudden decreases in value indicate periodic gas refills. 
 
 
 <!DOCTYPE html>
@@ -132,6 +132,10 @@ The chart undergoes automatic weekly updates through GitHub Actions. Sudden drop
                 .attr("transform", "translate(0," + height + ")")
                 .call(xAxis)
                 .selectAll("text")
+                .style("text-anchor", "end") 
+                .attr("dx", "-.8em") 
+                .attr("dy", ".15em") 
+                .attr("transform", "rotate(-20)")
                 .style("font-size", "14px");
 
             svg.append("g")
