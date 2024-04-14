@@ -165,15 +165,22 @@ The chart undergoes automatic weekly updates through GitHub Actions.
                         .attr("x2", x(dataPoint.date))
                         .style("opacity", 1);
                     
-                    
+                    priceLine.selectAll(".price-point")
+                        .style("opacity", function(d) {
+                            return d === dataPoint ? 1 : 0;
+                    });
+                    portfolioLine.selectAll(".portfolio-point")
+                        .style("opacity", function(d) {
+                            return d === dataPoint ? 1 : 0;
+                    });
                 })
                 .on('mouseout', function() {
                     tip.style("opacity", 0);
                     verticalLine.style("opacity", 0);
                     priceLine.selectAll(".price-point")
-                        .style("opacity", 0)
+                        .style("opacity", 0);
                     portfolioLine.selectAll(".portfolio-point")
-                        .style("opacity", 0)
+                        .style("opacity", 0);
                 });
 
             var xAxis = d3.axisBottom(x)
