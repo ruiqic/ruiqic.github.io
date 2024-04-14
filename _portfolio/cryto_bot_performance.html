@@ -156,21 +156,16 @@ The chart undergoes automatic weekly updates through GitHub Actions.
                     var bisectDate = d3.bisector(function(d) { return d.date; }).left;
                     var idx = bisectDate(decimatedData, xValue);
                     var dataPoint = decimatedData[idx];
-                    
+                    if (idx > 0 && (xValue - decimatedData[idx-1].date) < (decimatedData[idx].date - xValue)) {
+                        dataPoint = decimatedData[idx-1];
+                    }
                     
                     tip.show(dataPoint);
                     verticalLine.attr("x1", x(dataPoint.date))
                         .attr("x2", x(dataPoint.date))
                         .style("opacity", 1);
                     
-                    priceLine.selectAll(".price-point")
-                        .style("opacity", function(d) {
-                            return d === dataPoint ? 1 : 0;
-                    });
-                    portfolioLine.selectAll(".portfolio-point")
-                        .style("opacity", function(d) {
-                            return d === dataPoint ? 1 : 0;
-                    });
+                    
                 })
                 .on('mouseout', function() {
                     tip.style("opacity", 0);
