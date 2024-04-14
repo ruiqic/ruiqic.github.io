@@ -105,6 +105,37 @@ The chart undergoes automatic weekly updates through GitHub Actions.
                 .attr("stroke-width", 1)
                 .style("opacity", 0);
 
+            var priceLine = svg.append("g")
+                .attr("class", "price-line-points");
+            var portfolioLine = svg.append("g")
+                .attr("class", "portfolio-line-points");
+
+            priceLine.selectAll(".price-point")
+                .data(decimatedData)
+                .enter()
+                .append("circle")
+                .attr("class", "price-point")
+                .attr("cx", function(d) { return x(d.date); })
+                .attr("cy", function(d) { return y2(d.price); })
+                .attr("r", 4)
+                .attr("fill", "lightcoral")
+                .style("opacity", 0)
+                .style("stroke", "black")
+                .style("stroke-width", 2);
+
+            portfolioLine.selectAll(".portfolio-point")
+                .data(decimatedData)
+                .enter()
+                .append("circle")
+                .attr("class", "portfolio-point")
+                .attr("cx", function(d) { return x(d.date); })
+                .attr("cy", function(d) { return y(d.total_value); })
+                .attr("r", 4)
+                .attr("fill", "steelblue")
+                .style("opacity", 0)
+                .style("stroke", "black")
+                .style("stroke-width", 2);
+
             svg.append("rect")
                 .attr("width", width)
                 .attr("height", height)
@@ -113,20 +144,43 @@ The chart undergoes automatic weekly updates through GitHub Actions.
                 .on('mouseover', function() {
                     tip.style("opacity", 1);
                     verticalLine.style("opacity", 1);
+                    priceLine.selectAll(".price-point")
+                        .style("opacity", 1);
+                    portfolioLine.selectAll(".portfolio-point")
+                        .style("opacity", 1);
                 })
                 .on('mousemove', function() {
                     var mouseX = d3.mouse(this)[0];
                     var xValue = x.invert(mouseX);
+
                     var bisectDate = d3.bisector(function(d) { return d.date; }).left;
                     var idx = bisectDate(decimatedData, xValue);
-                    tip.show(decimatedData[idx]);
-                    verticalLine.attr("x1", mouseX)
-                        .attr("x2", mouseX)
+                    var dataPoint = decimatedData[idx];
+                    if (idx > 0 && (xValue - decimatedData[idx-1].date) < (decimatedData[idx].date - xValue)) {
+                        dataPoint = decimatedData[idx-1];
+                    }
+                    
+                    tip.show(dataPoint);
+                    verticalLine.attr("x1", x(dataPoint.date))
+                        .attr("x2", x(dataPoint.date))
                         .style("opacity", 1);
+                    
+                    priceLine.selectAll(".price-point")
+                        .style("opacity", function(d) {
+                            return d === dataPoint ? 1 : 0;
+                    });
+                    portfolioLine.selectAll(".portfolio-point")
+                        .style("opacity", function(d) {
+                            return d === dataPoint ? 1 : 0;
+                    });
                 })
                 .on('mouseout', function() {
                     tip.style("opacity", 0);
                     verticalLine.style("opacity", 0);
+                    priceLine.selectAll(".price-point")
+                        .style("opacity", 0)
+                    portfolioLine.selectAll(".portfolio-point")
+                        .style("opacity", 0)
                 });
 
             var xAxis = d3.axisBottom(x)
