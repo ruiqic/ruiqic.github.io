@@ -13,7 +13,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D. Student in Machine Learning, Georgia Institute of Technology, 2021 - Present
+* Ph.D. in Machine Learning, Georgia Institute of Technology, 2021 - Present
+
+* M.S. in Statistics, eorgia Institute of Technology, 2024 (expected)
 
 * B.S. in Chemical Engineering, Carnegie Mellon University, 2021
   * Minor in Computer Science
@@ -40,8 +42,9 @@ Experience
   
 Poster Presentations
 ======
-* “Accelerating Quantum Mechanical Simulations Using Physics-Based Machine Learning Potentials” at 2020 virtual AIChE Annual Meeting
-* “Enhancing the Workflow Efficiency of High Throughput Surface Calculations” at 2019 Pittsburgh-Cleveland Catalysis Society Annual Symposium
+* "Deep learning for three-dimensional semantic segmentation for periapical lesion detection on cone-beam computed tomography" at 2024 Society for Imaging Informatics in Medicine Annual Meeting
+* "Accelerating Quantum Mechanical Simulations Using Physics-Based Machine Learning Potentials" at 2020 virtual AIChE Annual Meeting
+* "Enhancing the Workflow Efficiency of High Throughput Surface Calculations" at 2019 Pittsburgh-Cleveland Catalysis Society Annual Symposium
   
 Skills
 ======
