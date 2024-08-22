@@ -43,7 +43,7 @@ Personal Projects
 
 ## On-chain Trading Bot
 
-I programmed a bot that operates on the [Solana](https://solana.com/) blockchain, using Python and JavaScript to interact with Rust programs. The strategy profits from price volatility in digital assets by market making and matching orders on a decentralized exchange. The bot is hosted on [Google Cloud Platform](https://cloud.google.com/). I also made a [simple chart](../crypto-bot-performance) to track the bot's performance.
+I programmed a bot that operates on the [Solana](https://solana.com/) blockchain, using Python and JavaScript to interact with Rust programs. The strategy profits from price volatility in digital assets by market making and matching orders on a decentralized exchange. The bot has been profitable (as of April 2024) without investing in high-end infrastructure, relying instead on free-tier services. The bot is hosted on [Google Cloud Platform](https://cloud.google.com/) to maintain uptime. I also made a [simple chart](../crypto-bot-performance) with d3.js to track the bot's performance.
 
 
 
