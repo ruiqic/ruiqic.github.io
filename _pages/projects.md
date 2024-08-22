@@ -43,7 +43,7 @@ Personal Projects
 
 ## Moonshot Python SDK
 
-Developed a Python SDK for Moonshot, facilitating interaction with the protocol on the [Solana](https://solana.com/) blockchain, allowing developers to trade meme tokens or vanity coins. The [official TypeScript SDK](https://github.com/wen-moon-ser/moonshot-sdk) was used as reference. A simple, data-driven sniping bot was also developed to make use of the SDK to execute profitable trades.
+I developed a Python SDK for Moonshot, facilitating interaction with the protocol on the [Solana](https://solana.com/) blockchain, allowing developers to trade meme tokens or vanity coins. The [official TypeScript SDK](https://github.com/wen-moon-ser/moonshot-sdk) was used as reference. A simple, data-driven sniping bot was also developed to make use of the SDK to execute profitable trades.
 
 Public SDK codebase: [github.com/ruiqic/moonshot-py](https://github.com/ruiqic/moonshot-py)
 
