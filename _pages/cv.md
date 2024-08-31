@@ -54,8 +54,9 @@ Skills
 * Languages: English, Mandarin, Hungarian, Spanish (intermediate)
   
 
-Scholarships
+Awards
 ======
+* George Family Fellowship, 2024
 * Chemical Engineering Summer Scholars, 2020
 * Summer Undergraduate Research Fellowship, 2019
 * Chemical Engineering Summer Scholars, 2019
