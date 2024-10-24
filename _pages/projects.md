@@ -37,29 +37,6 @@ Codebase: [github.com/ruiqic/ulissi-waltime-prediction](https://github.com/ruiqi
 
 
 
-
-Personal Projects
-======
-
-## Futarchy Python SDK
-
-I developed a Python SDK for Futarchy, facilitating trading [MetaDAO](https://docs.metadao.fi/)'s futarchy markets. 
-
-Public SDK codebase: [github.com/ruiqic/futarchy](https://github.com/ruiqic/futarchy)
-
-## Moonshot Python SDK
-
-I developed a Python SDK for Moonshot, facilitating interaction with the protocol on the [Solana](https://solana.com/) blockchain, allowing developers to trade meme tokens or vanity coins. The [official TypeScript SDK](https://github.com/wen-moon-ser/moonshot-sdk) was used as reference. A simple, data-driven sniping bot was also developed to make use of the SDK to execute profitable trades.
-
-Public SDK codebase: [github.com/ruiqic/moonshot-py](https://github.com/ruiqic/moonshot-py)
-
-## On-chain Trading Bot
-
-I programmed a bot that operated on the [Solana](https://solana.com/) blockchain, using Python and JavaScript to interact with Rust smart contracts (programs). The strategy profited from price volatility in digital assets. The bot had been profitable without investing in high-end infrastructure, relying instead on free-tier services. The bot was hosted on [Google Cloud Platform](https://cloud.google.com/) to maintain uptime. I also made a [simple chart](../crypto-bot-performance) with d3.js to track the bot's performance.
-
-
-
-
 Class Projects
 ======
 
