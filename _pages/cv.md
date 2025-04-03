@@ -15,7 +15,7 @@ Education
 ======
 * Ph.D. in Machine Learning, Georgia Institute of Technology, 2021 - Present
 
-* M.S. in Statistics, eorgia Institute of Technology, 2024 (expected)
+* M.S. in Statistics, Georgia Institute of Technology, 2024 (expected)
 
 * B.S. in Chemical Engineering, Carnegie Mellon University, 2021
   * Minor in Computer Science
